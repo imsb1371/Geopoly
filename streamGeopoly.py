@@ -12,7 +12,7 @@ import os
 filename1 = 'https://raw.githubusercontent.com/imsb1371/Geopoly/refs/heads/main/Capture1.PNG'
 filename2 = 'https://raw.githubusercontent.com/imsb1371/Geopoly/refs/heads/main/Capture2.PNG'
 
-st.title('Prediction of Heavy Metal Removal Efficiency Using Biochar')
+st.title('Heavy metal immobilization in the solidification/stabilization of municipal solid waste incineration fly ash using geopolymers')
 with st.container():
     st.image(filename1)
     st.image(filename2)
@@ -25,31 +25,31 @@ with col1:
 with col2:
     Si_Ca = st.number_input('Si/Ca Ratio', 0.0)
 with col3:
-    Fe = st.number_input('Fe (mg/kg)', 0.0)
+    Fe = st.number_input('Fe', 0.0)
 
 col4, col5, col6 = st.columns(3)
 with col4:
-    T = st.number_input('Temperature (T, °C)', 0.0)
+    T = st.number_input('Temperature', 0.0)
 with col5:
-    CT = st.number_input('CT (unknown units)', 0.0)
+    CT = st.number_input('CT', 0.0)
 with col6:
     L_S = st.number_input('L/S Ratio', 0.0)
 
 col7, col8, col9 = st.columns(3)
 with col7:
-    AE = st.number_input('AE (unknown units)', 0.0)
+    AE = st.number_input('AE', 0.0)
 with col8:
-    AM = st.number_input('AM (unknown units)', 0.0)
+    AM = st.number_input('AM', 0.0)
 with col9:
-    HMV = st.number_input('HMV (unknown units)', 0.0)
+    HMV = st.number_input('HMV', 0.0)
 
 col10, col11, col12 = st.columns(3)
 with col10:
-    IC = st.number_input('IC (unknown units)', 0.0)
+    IC = st.number_input('IC', 0.0)
 with col11:
-    HME = st.number_input('HME (unknown units)', 0.0)
+    HME = st.number_input('HME', 0.0)
 with col12:
-    RHM = st.number_input('RHM (unknown units)', 0.0)
+    RHM = st.number_input('RHM', 0.0)
 
 # Gather all inputs into a list for normalization
 input_values = [Si_Al, Si_Ca, Fe, T, CT, L_S, AE, AM, HMV, IC, HME, RHM]
