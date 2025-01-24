@@ -12,7 +12,7 @@ import os
 filename1 = 'https://raw.githubusercontent.com/imsb1371/Geopoly/refs/heads/main/Capture1.PNG'
 filename2 = 'https://raw.githubusercontent.com/imsb1371/Geopoly/refs/heads/main/Capture2.PNG'
 
-st.title('Heavy metal immobilization in the solidification/stabilization of municipal solid waste incineration fly ash using geopolymers')
+st.title('Heavy metal immobilization in MSWFA stabilization using geopolymers')
 with st.container():
     st.image(filename1)
     st.image(filename2)
@@ -87,7 +87,7 @@ if st.button('Run'):
             RE = min(RE, 99)  # Limit RE to 99%
 
             # Display predictions
-            st.write("Removal efficiency (%): ", np.round(abs(RE), 2))
+            st.write("Immobilization rate (%): ", np.round(abs(RE), 2))
 
         except Exception as e:
             st.error(f"Model prediction failed: {e}")
